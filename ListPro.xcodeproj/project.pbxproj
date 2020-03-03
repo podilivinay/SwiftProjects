@@ -15,6 +15,8 @@
 		6DCA1203240D157C00A01FAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCA1201240D157C00A01FAD /* LaunchScreen.storyboard */; };
 		6DCA120E240D158000A01FAD /* ListProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA120D240D158000A01FAD /* ListProTests.swift */; };
 		6DCA1219240D158000A01FAD /* ListProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA1218240D158000A01FAD /* ListProUITests.swift */; };
+		6DCA1228240D91C400A01FAD /* ListPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DCA1226240D91C400A01FAD /* ListPro.xcdatamodeld */; };
+		6DCA122B240D91DE00A01FAD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA122A240D91DE00A01FAD /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6DCA1214240D158000A01FAD /* ListProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DCA1218240D158000A01FAD /* ListProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProUITests.swift; sourceTree = "<group>"; };
 		6DCA121A240D158000A01FAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCA1227240D91C400A01FAD /* ListPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListPro.xcdatamodel; sourceTree = "<group>"; };
+		6DCA122A240D91DE00A01FAD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DCA122B240D91DE00A01FAD /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				6DCA120C240D158000A01FAD /* ListProTests */,
 				6DCA1217240D158000A01FAD /* ListProUITests */,
 				6DCA11F4240D156300A01FAD /* Products */,
+				6DCA1229240D91DD00A01FAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +105,14 @@
 		6DCA11F5240D156300A01FAD /* ListPro */ = {
 			isa = PBXGroup;
 			children = (
+				6DCA1232240E2F8500A01FAD /* Coredata */,
 				6DCA11F6240D156300A01FAD /* AppDelegate.swift */,
 				6DCA11F8240D156300A01FAD /* SceneDelegate.swift */,
 				6DCA11FA240D156300A01FAD /* ContentView.swift */,
 				6DCA11FC240D157C00A01FAD /* Assets.xcassets */,
 				6DCA1201240D157C00A01FAD /* LaunchScreen.storyboard */,
 				6DCA1204240D157C00A01FAD /* Info.plist */,
+				6DCA1226240D91C400A01FAD /* ListPro.xcdatamodeld */,
 				6DCA11FE240D157C00A01FAD /* Preview Content */,
 			);
 			path = ListPro;
@@ -135,6 +143,21 @@
 			);
 			path = ListProUITests;
 			sourceTree = "<group>";
+		};
+		6DCA1229240D91DD00A01FAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DCA122A240D91DE00A01FAD /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DCA1232240E2F8500A01FAD /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coredata;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -268,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DCA11F7240D156300A01FAD /* AppDelegate.swift in Sources */,
+				6DCA1228240D91C400A01FAD /* ListPro.xcdatamodeld in Sources */,
 				6DCA11F9240D156300A01FAD /* SceneDelegate.swift in Sources */,
 				6DCA11FB240D156300A01FAD /* ContentView.swift in Sources */,
 			);
@@ -594,6 +618,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6DCA1226240D91C400A01FAD /* ListPro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DCA1227240D91C400A01FAD /* ListPro.xcdatamodel */,
+			);
+			currentVersion = 6DCA1227240D91C400A01FAD /* ListPro.xcdatamodel */;
+			path = ListPro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6DCA11EB240D156300A01FAD /* Project object */;
 }

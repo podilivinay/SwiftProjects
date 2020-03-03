@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -32,6 +32,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    lazy var persistentContainer: NSPersistentContainer = {
+       let container = NSPersistentContainer(name: "ListPro")
+        container.loadPersistentStores { (storeDescription, error) in
+            if let error = error {
+                
+            }
+        }
+        return container
+    }()
+    func saveContext() {
+        let context = self.persistentContainer.viewContext
+        do {
+            try context.save()
+        }catch {
+            print("Error unresolved error")
+        }
+    }
+    
 }
 
