@@ -1,0 +1,4 @@
+Its SwiftUI based project.
+Implemented with simple UI like displaying input from Text Field, Add name button
+Taking wrapped value from TextField and add into Coredata.
+Display user names from Coredata into List.
